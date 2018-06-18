@@ -1,19 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Header from  './header'
+import Footer from './footer'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 export default class Layout extends React.Component {
     render() {
         return ( 
-        <div className = "shopping-list" >
-            <h1 > Shopping List
-            for {
-                this.props.name
-            }</h1> 
-            <ul>
-            <li > Instagram </li> 
-            <li > WhatsApp </li> 
-            <li>Oculus </li>
-            </ul> 
-        </div>
+            <div>
+                <Header />
+                < div className = "shopping-list" >
+                    <h1 > Shopping List
+                    for {
+                        this.props.name
+                    }</h1> 
+                    <ul>
+                    <li > Instagram </li> 
+                    <li > WhatsApp </li> 
+                    <li>Oculus </li>
+                    </ul> 
+                </div>
+                <Footer />
+            </div>       
         );
     }
 }

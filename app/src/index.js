@@ -6,4 +6,4 @@ import Layout from './components/layout.js'
 
 const app = document.getElementById('root');
 
-ReactDOM.render( <Layout/ > , root)
+ReactDOM.render( <Layout/ > , app)
